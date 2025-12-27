@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khushi Tanna | Digital Marketing Portfolio</title>
+
+<style>
+:root{
+  --bg:#070b18;
+  --card:#10162b;
+  --blue:#00c6ff;
+  --orange:#ff9f1c;
+  --text:#eaeaea;
+}
+
+*{box-sizing:border-box;}
+
+body{
+  margin:0;
+  font-family:"Segoe UI", Arial, sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  overflow-x:hidden;
+}
+
+/* ================= HERO WITH IMAGE BACKGROUND ================= */
+.hero{
+  min-height:30vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  position:relative;
+  padding:120px 20px;
+  background:
+    linear-gradient(rgba(7,11,24,.85), rgba(7,11,24,.85)),
+    url("hero.jpg") center/cover no-repeat;
+}
+
+/* ================= NAME EFFECT ================= */
+.hero h1{
+  font-size:60px;
+  letter-spacing:5px;
+  cursor:pointer;
+  animation:glowPulse 3s infinite alternate;
+  transition:.4s ease;
+}
+
+.hero h1:hover{
+  transform:scale(1.1);
+  letter-spacing:7px;
+  text-shadow:
+    0 0 15px var(--blue),
+    0 0 40px var(--blue),
+    0 0 80px var(--orange);
+}
+
+@keyframes glowPulse{
+  from{text-shadow:0 0 15px var(--blue);}
+  to{text-shadow:0 0 40px var(--blue);}
+}
+
+.hero h3{
+  color:var(--blue);
+  font-weight:400;
+  margin-top:10px;
+}
+
+.hero p{
+  max-width:650px;
+  margin:20px auto;
+  color:#cfd8ff;
+}
+
+.btn{
+  margin-top:35px;
+  padding:15px 40px;
+  border-radius:40px;
+  background:linear-gradient(135deg,var(--orange),#ff6a00);
+  color:#000;
+  font-weight:bold;
+  text-decoration:none;
+  transition:.3s;
+}
+
+.btn:hover{transform:scale(1.12);}
+
+/* ================= SECTION GAP (10px) ================= */
+.section-gap{
+  height:10px;
+  background:#02040a;
+}
+
+/* ================= SECTIONS ================= */
+section{
+  max-width:1100px;
+  margin:auto;
+  padding:10px 20px;
+  opacity:0;
+  transform:translateY(60px);
+  transition:1s ease;
+}
+
+section.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* ================= TITLES ================= */
+.section-title{
+  text-align:center;
+  margin-bottom:80px;
+}
+
+.section-title h1{
+  font-size:44px;
+  letter-spacing:4px;
+  color:var(--blue);
+  position:relative;
+  display:inline-block;
+  text-shadow:0 0 20px rgba(0,198,255,.6);
+}
+
+.section-title h1::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  bottom:-20px;
+  transform:translateX(-50%);
+  width:100px;
+  height:4px;
+  background:linear-gradient(90deg,var(--blue),var(--orange));
+  box-shadow:0 0 15px var(--blue);
+}
+
+/* ================= CARDS ================= */
+.card{
+  background:var(--card);
+  padding:40px;
+  border-radius:20px;
+  margin-bottom:45px;
+  box-shadow:0 25px 60px rgba(0,0,0,.6);
+  transition:.4s;
+}
+
+.card:hover{
+  transform:translateY(-15px);
+  box-shadow:0 30px 70px rgba(0,198,255,.25);
+}
+
+/* ================= SKILLS ================= */
+.skills{
+  text-align:center;
+}
+
+.skills span{
+  display:inline-block;
+  padding:14px 28px;
+  margin:10px;
+  border-radius:40px;
+  background:linear-gradient(135deg,#141e30,#243b55);
+  color:var(--blue);
+  font-weight:600;
+}
+
+/* ================= IMAGES ================= */
+img{
+  width:100%;
+  border-radius:18px;
+  margin-top:20px;
+  border:2px solid #1f2a44;
+}
+
+/* ================= CASE STUDY ================= */
+.case-line{
+  border-left:4px solid var(--orange);
+  padding-left:20px;
+  margin-bottom:18px;
+}
+
+/* ================= FOOTER ================= */
+footer{
+  background:#04050a;
+  text-align:center;
+  padding:35px;
+  color:#777;
+  letter-spacing:1px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>KHUSHI TANNA</h1>
+  <h3>DIGITAL MARKETER • SEO • META ADS • GOOGLE ADS</h3>
+  <p>Helping brands grow with data-driven performance marketing.</p>
+  <a href="khushi resume.pdf" class="btn" download>DOWNLOAD RESUME</a>
+</div>
+
+<div class="section-gap"></div>
+
+<!-- ABOUT -->
+<section>
+  <div class="section-title"><h1>ABOUT ME</h1></div>
+  <div class="card">
+     I’m a results-driven Digital Marketer with hands-on experience in Meta Ads, Google Ads, and SEO. I specialize in generating quality leads and improving conversion rates through data-backed strategies. My approach focuses on audience targeting, creative testing, and continuous optimization. I enjoy turning insights into scalable growth opportunities. Always learning, always optimizing.
+  </div>
+</section>
+
+<div class="section-gap"></div>
+
+<!-- SKILLS -->
+<section>
+  <div class="section-title"><h1>CORE SKILLS</h1></div>
+  <div class="card skills">
+    <span>SEO</span>
+    <span>Google Ads</span>
+    <span>Meta Ads</span>
+    <span>Lead Generation</span>
+    <span>Social Media Marketing</span>
+    <span>Canva</span>
+    <span>Content Writing</span>
+  </div>
+</section>
+
+<div class="section-gap"></div>
+
+<!-- PROJECTS -->
+<section>
+  <div class="section-title"><h1>PROJECT PROOF</h1></div>
+  <div class="card">
+    <b>Meta Ads – Lead Generation</b>
+    <img src="images/project1.jpg">
+  </div>
+  <div class="card">
+    <b>SEO Performance Growth</b>
+    <img src="images/project2.jpg">
+  </div>
+</section>
+
+<div class="section-gap"></div>
+
+<!-- CASE STUDY -->
+<section>
+  <div class="section-title"><h1>CASE STUDY</h1></div>
+  <div class="card">
+    <h3 style="color:var(--orange)">40+ Leads in 20 Days</h3>
+    <div class="case-line"><b>Client:</b> MySofaCleaning.com</div>
+    <div class="case-line"><b>Strategy:</b> Local targeting + creative testing</div>
+    <div class="case-line"><b>Result:</b> Consistent daily qualified leads</div>
+  </div>
+</section>
+
+<div class="section-gap"></div>
+
+<!-- CONTACT -->
+<section>
+  <div class="section-title"><h1>CONTACT</h1></div>
+  <div class="card">
+    <p>Email: kktanna2510@gmail.com</p>
+    <p>Phone: +91 9427324916</p>
+  </div>
+</section>
+
+<footer>
+  © 2025 KHUSHI TANNA • DIGITAL MARKETING PORTFOLIO
+</footer>
+
+<!-- SCROLL ANIMATION -->
+<script>
+const sections = document.querySelectorAll("section");
+const reveal = () => {
+  const trigger = window.innerHeight * 0.85;
+  sections.forEach(sec=>{
+    if(sec.getBoundingClientRect().top < trigger){
+      sec.classList.add("show");
+    }
+  });
+};
+window.addEventListener("scroll", reveal);
+reveal();
+</script>
+
+</body>
+</html>
